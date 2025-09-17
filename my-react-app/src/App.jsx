@@ -1,11 +1,9 @@
 import Card from './Card'
 
-
 function App() {
   return(
     <>
       <Card />
-      <Card />    
     </>
   );
 }
