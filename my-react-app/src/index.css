@@ -1,10 +1,17 @@
-.student{
-    font-family: Arial, sans-serif;
-    font-size: 2em;
-    padding: 10px;
-    border: 1px solid black;
+.welcome-message{
+  font-size: 2.5rem;
+  background-color: rgb(19, 227, 19);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
 }
 
-.student p{
-    margin: 0;
+.login-prompt{
+  font-size: 2.5rem;
+  background-color: red;
+  color: white;
+  padding: 10ppx;
+  border-radius: 5px;
+  margin: 0;
 }
