@@ -14,9 +14,32 @@ import React, {useState, useEffect, useRef} from 'react'
 
 function MyComponent(){
 
-    let [number, setNumber] = useState();
+    const inputRef1 = useRef(null)
+    const inputRef2 = useRef(null)
+    const inputRef3 = useRef(null)
+
+    const ref = useRef(0);
+
+    useEffect(() => {
+        console.log("Component Rendered");
+    })
+
+    function handleClick(){
+        inputRef.current.focus();
+        inputRef.current.style.backgroundColor = "yellow";
+    }
+
     return(
-        <button>Click Me</button>
+        <div>
+            <button onClick={handleClick}>Click Me 1</button>
+            <input ref={inputRef}/><br />
+
+            <button onClick={handleClick}>Click Me 2</button>
+            <input ref={inputRef} /><br />
+
+            <button onClick={handleClick}>Click Me 3</button>
+            <input ref={inputRef} />
+        </div>
     );
 }
 
