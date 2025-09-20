@@ -41,6 +41,7 @@ function MyComponent(){
             <input ref={inputRef3} />
         </div>
     );
+    
 }
 
 export default MyComponent
