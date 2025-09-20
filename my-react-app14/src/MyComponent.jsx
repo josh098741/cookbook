@@ -32,13 +32,13 @@ function MyComponent(){
     return(
         <div>
             <button onClick={handleClick}>Click Me 1</button>
-            <input ref={inputRef}/><br />
+            <input ref={inputRef1}/><br />
 
             <button onClick={handleClick}>Click Me 2</button>
-            <input ref={inputRef} /><br />
+            <input ref={inputRef2} /><br />
 
             <button onClick={handleClick}>Click Me 3</button>
-            <input ref={inputRef} />
+            <input ref={inputRef3} />
         </div>
     );
 }
