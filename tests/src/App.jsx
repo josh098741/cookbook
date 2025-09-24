@@ -1,8 +1,8 @@
-import Trial from './Trial'
+import Accordian from './Components/Accordian/index'
 
 function App() {
   return(
-      <Trial />
+      <Accordian />
   );
 }
 

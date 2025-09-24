@@ -1,14 +1,14 @@
 //single selection
 //multibles selection
-import React, {useState} from 'react'
+import React, {useState} from 'react'//Lets us manage component state
 import './styles.css'
-import data from './data'
+import data from './data'//An array of objects like {id, question, answer}
 
 export default function Accordian(){
 
-    const [selected, setSelected] = useState(null)
-    const [enableMultiSelection, setEnableMultiSelection] = useState(false)
-    const [multiple, setMultiple] = useState([])
+    const [selected, setSelected] = useState(null)//Tracks the one currently opened item in a single selection
+    const [enableMultiSelection, setEnableMultiSelection] = useState(false)//boolean toggle(true = multi-select mode, false=single-select mode)
+    const [multiple, setMultiple] = useState([])//Multiple an array of ids for the items that are open in multi selection mode
     
     function handleSingleSelection(index){
         setSelected(index === selected ? null : index)
