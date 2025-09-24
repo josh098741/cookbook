@@ -1,8 +1,8 @@
-import Accordian from './Components/Accordian/index'
+import StarRating from './Components/star-rating/index'
 
 function App() {
   return(
-      <Accordian />
+      <StarRating />
   );
 }
 
