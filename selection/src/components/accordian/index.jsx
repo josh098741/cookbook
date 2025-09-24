@@ -15,11 +15,10 @@ export default function Accordian(){
     }
 
     function handleMultiSelection(getCurrentId){
-        let cpyMultiple = [...multiple];
-        const findIndexOfCurrent = cpyMultiple.indexOf(getCurrentId)
+        let cpyMultiple = [...multiple];//If you click the same item aagain -> it closes(null)
+        const findIndexOfCurrent = cpyMultiple.indexOf(getCurrentId)//Otherwise -> update selected with the new id
         if(findIndexOfCurrent === -1) cpyMultiple.push(getCurrentId)
-        else cpyMultiple.splice(findIndexOfCurrent, 1)
-
+        else cpyMultiple.splice(findIndexOfCurrent, 1)//remove if not present
         setMultiple(cpyMultiple)
     }
     
