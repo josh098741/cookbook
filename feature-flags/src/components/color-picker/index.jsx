@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 
-export default function RandomColor(){
+function RandomColor(){
 
     const [typeOfColor, setTypeOfColor] = useState('hex')
     const [color, setColor] = useState('#000000')
@@ -59,3 +59,5 @@ export default function RandomColor(){
         </div>
     );
 }
+
+export default RandomColor
