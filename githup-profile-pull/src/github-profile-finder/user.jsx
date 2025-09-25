@@ -11,7 +11,7 @@ function User({user}){
             <div>
                 <img src={avatar_url} className="avatar" alt="User" />
             </div>
-            <div>
+            <div className="name-container">
                 <a href={`https://github.com/${login}`}>{name || login}</a>
                 <p>User joined at {`${createDate.getDate()} ${createDate.toLocaleString('en-us',{month: 'short'})} ${createDate.getFullYear()}`}</p>
             </div>
