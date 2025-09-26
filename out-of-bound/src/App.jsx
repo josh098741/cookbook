@@ -1,10 +1,14 @@
 import UseFetchHookText from "./use-fetch-custom-hook/text";
-
+import UseOnClickOutsideTest from "./use-outside-click/test";
 function App() {
   
-  /*Use fetch - custom hook*/
+  
   return(
-    <UseFetchHookText />
+    /*Use fetch - custom hook*/
+    /*<UseFetchHookText />*/
+
+    /*Use Onclick Outside Hook Test*/
+    <UseOnClickOutsideTest />
   );
 }
 
